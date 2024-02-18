@@ -10,7 +10,7 @@ def orderFormView(request):
         if form.is_valid():
             form.save()
             return redirect('show_url')
-    template_name = 'crudapp/order.html'
+    template_name = 'crudapp/orders.html'
     context = {'form': form}
     return render(request, template_name, context)
 
@@ -28,7 +28,7 @@ def updateView(request, f_oid):
         if form.is_valid():
             form.save()
             return redirect('show_url')
-    template_name = 'crudapp/order.html'
+    template_name = 'crudapp/orders.html'
     context = {'form': form}
     return render(request, template_name, context)
 

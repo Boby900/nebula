@@ -11,12 +11,12 @@ class OrderForm(forms.ModelForm):
             'title' : 'Title',
             'genre' : 'Genre' ,
             'author' : 'Author Name' ,
-            'publishDate' : 'Publish Date' ,
+            'publishedDate' : 'Publish Date' ,
         }
 
         widgets  ={
             'title' : forms.TextInput(attrs={'placeholder': 'eg. Homo Sapiens'}),
             'genre' : forms.TextInput(attrs={'placeholder': 'eg. Fiction'}),
             'author' : forms.TextInput(attrs={'placeholder': 'eg. Yuval Noah Harrari'}),
-            'publishDate' : forms.DateTimeInput(attrs={'placeholder': 'eg. 22/09/2222'}),
+            'publishedDate' : forms.DateTimeInput(attrs={'placeholder': 'eg. 22/09/2222'}),
         }
